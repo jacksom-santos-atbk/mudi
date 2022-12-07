@@ -48,8 +48,8 @@ public class WebSecurityConfig {
 	public DataSource dataSource() {
 		DataSourceBuilder<?> dataSourceBuilder = DataSourceBuilder.create();
 		dataSourceBuilder.url("jdbc:mysql://localhost:3306/AB_TREINAMENTO_JACKSOM");
-		dataSourceBuilder.username("root");
-		dataSourceBuilder.password("autbank");
+		dataSourceBuilder.username("jack");
+		dataSourceBuilder.password("password");
 		return dataSourceBuilder.build();
 	}
 

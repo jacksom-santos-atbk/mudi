@@ -25,7 +25,9 @@ public class PedidosRest {
 		Sort sort = Sort.by("id").descending();
 		PageRequest paginacao = PageRequest.of(0, 10, sort);
 		
-		return pedidoRepository.findByStatus(StatusPedido.AGUARDANDO, paginacao);
+		List<Pedido> pedidosAguardando = pedidoRepository.findByStatus(StatusPedido.AGUARDANDO, paginacao);
+		 
+		return pedidosAguardando;
 	}
 	
 }

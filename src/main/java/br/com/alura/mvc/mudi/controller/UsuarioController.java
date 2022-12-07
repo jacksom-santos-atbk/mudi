@@ -17,12 +17,12 @@ import br.com.alura.mvc.mudi.model.StatusPedido;
 import br.com.alura.mvc.mudi.repository.PedidoRepository;
 
 @Controller
-@RequestMapping("usuario")
+@RequestMapping("/usuario")
 public class UsuarioController {
 
 	@Autowired
 	private PedidoRepository pedidoRepository;
-	
+	 
 	@GetMapping("/home")
 	public String home(HttpServletRequest request, Principal principal) {
 
